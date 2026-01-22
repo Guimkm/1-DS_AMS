@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel de Imagens</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Carrossel.CSS">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Carrossel de Imagens</h1>
+            <p class="subtitle">Navegue pelas imagens usando os botões, indicadores ou deixe o carrossel no modo automático</p>
+        </header>
+        
+        <main>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <!-- As imagens serão adicionadas via JavaScript -->
+                </div>
+                
+                <button class="carousel-btn prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="carousel-indicators">
+                <!-- Os indicadores serão adicionados via JavaScript -->
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn" id="prevBtn">
+                    <i class="fas fa-step-backward"></i> Anterior
+                </button>
+                <button class="control-btn" id="toggleAuto">
+                    <i class="fas fa-pause"></i> Pausar Auto
+                </button>
+                <button class="control-btn" id="nextBtn">
+                    Próxima <i class="fas fa-step-forward"></i>
+                </button>
+                
+                <div class="speed-control">
+                    <label for="speed">Tempo de imagem:</label>
+                    <input type="range" id="speed" min="1" max="10" value="5">
+                    <span id="speedValue">5s</span>
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <h2>Como usar o carrossel:</h2>
+                <ul>
+                    <li>Use os botões "Anterior" e "Próxima" para navegação manual</li>
+                    <li>Clique nos indicadores abaixo das imagens para ir direto a uma imagem específica</li>
+                    <li>Use o botão "Pausar Auto" para interromper a navegação automática</li>
+                    <li>Ajuste a velocidade do carrossel automático usando o controle deslizante</li>
+                    <li>Passe o mouse sobre uma imagem para ver sua descrição</li>
+                    <li>O carrossel é totalmente responsivo e se adapta a qualquer tamanho de tela</li>
+                </ul>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Carrossel de Imagens &copy; 2025 - Desenvolvido com HTML, CSS e JavaScript</p>
+        </footer>
+    </div>
+
+    <script src="Carrossel.JS"></script>
+</body>
+</html>
